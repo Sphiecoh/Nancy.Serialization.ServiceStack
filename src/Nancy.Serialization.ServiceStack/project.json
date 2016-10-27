@@ -17,10 +17,21 @@
   "dependencies": {
     "Nancy": {
       "target": "project"
-    },
-    "ServiceStack.Text": "3.9.71"
+    }
+    
   },
   "frameworks": {
-    "net452": {}
+    "net452": {
+      "dependencies":
+       {
+        "ServiceStack.Text": "4.5.4"
+      }
+    },
+    "netstandard1.6": {
+      "dependencies":
+       {
+        "ServiceStack.Core": "1.0.23"
+      }
+    }
   }
 }

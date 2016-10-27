@@ -19,7 +19,7 @@
         /// <returns>True if supported, false otherwise</returns>
         public bool CanDeserialize(MediaRange mediaRange, BindingContext context)
         {
-            return Helpers.IsJsonType(mediaRange);
+            return Json.Json.IsJsonContentType(mediaRange);
         }
 
         /// <summary>
@@ -45,7 +45,7 @@
             IEnumerable<BindingMemberInfo> properties;
             IEnumerable<BindingMemberInfo> fields;
 
-            if (context.DestinationType.IsGenericType)
+            if (context.DestinationType.GetTypeInfo().IsGenericType)
             {
                 var genericType = context.DestinationType.GetGenericArguments().FirstOrDefault();
 

@@ -14,7 +14,7 @@
         /// <returns>True if supported, false otherwise</returns>
         public bool CanSerialize(MediaRange mediaRange)
         {
-            return Helpers.IsJsonType(mediaRange);
+            return Json.Json.IsJsonContentType(mediaRange);
         }
 
         /// <summary>

@@ -50,9 +50,6 @@
     <Compile Include="..\..\dependencies\Nancy\SharedAssemblyInfo.cs">
       <Link>Properties\SharedAssemblyInfo.cs</Link>
     </Compile>
-    <Compile Include="..\Nancy.Serialization.ServiceStack\Helpers.cs">
-      <Link>Helpers.cs</Link>
-    </Compile>
     <Compile Include="..\Nancy.Serialization.ServiceStack\ServiceStackBodyDeserializer.cs">
       <Link>ServiceStackBodyDeserializer.cs</Link>
     </Compile>
